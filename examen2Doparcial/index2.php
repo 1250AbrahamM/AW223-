@@ -19,26 +19,25 @@
 
     <section id="Contacto">
 
-      <h2>Contáctame</h2>
-      <form id="form-contacto" action="./PHP/guardar_msg.php" method="POST">
+        
+      <form id="form-contacto" action="./PHP/enviar.php" method="POST">
         <div class="el"> 
 
           <label for="comsepto">Concepto</label> 
           <input 
           
             type="text"
-            id="comsepto"
-            name="comsepto"
-            placeholder=" ..." />
+            id="concepto"
+            name="concepto" >
 
         </div> 
         
         <div class="el">
-          <label for="Email">Monto</label>
+          <label for="text">Monto</label>
           <input
-            type="email"
-            id="Email"
-            name="Email"
+            type="number"
+                    id="monto"
+                    name="monto"
             />
         </div>
 
@@ -46,11 +45,9 @@
 
           <label for="comsepto">Categoria</label> 
           <input 
-          
-            type="text"
-            id="comsepto"
-            name="comsepto"
-            placeholder=" ..." />
+          id="categoria"
+                    name="categoria"
+        />
 
         </div> 
 
@@ -60,4 +57,6 @@
 
 
 </body>
-</html>
+</html>  
+
+// corrigeme ese formulario 

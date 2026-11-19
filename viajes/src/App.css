@@ -1,0 +1,243 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  color: #14213d;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Encabezado */
+.header {
+  background: #101a2e;
+  color: white;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 22px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Contenedor principal */
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: 25px auto;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(110deg, #087c70, #18536b);
+  color: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.banner p {
+  font-size: 14px;
+}
+
+/* Contador */
+.contador {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px #00000010;
+  margin-bottom: 25px;
+}
+
+.contador h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contador p {
+  color: #8b95a5;
+  font-size: 13px;
+}
+
+.contador strong {
+  color: #ff3155;
+  font-size: 22px;
+}
+
+/* Buscador */
+.explorar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.explorar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6dce5;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.explorar input:focus {
+  border-color: #087c70;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Botón filtro */
+.btn-filtro {
+  background: #087c70;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+
+/* Cuadrícula de destinos */
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Tarjetas */
+.destino-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px #00000012;
+  transition: transform 0.2s;
+}
+
+.destino-card:hover {
+  transform: translateY(-4px);
+}
+
+.destino-imagen {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+}
+
+.destino-contenido {
+  padding: 15px;
+}
+
+.categoria {
+  display: inline-block;
+  background: #d8f5f0;
+  color: #087c70;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.destino-contenido h3 {
+  margin: 10px 0 5px;
+  font-size: 19px;
+}
+
+.ubicacion {
+  color: #e83e67;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.precio {
+  color: #087c70;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Botones de tarjetas */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-favorito {
+  background: white;
+  color: #687386;
+  border: 1px solid #d6dce5;
+  padding: 9px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.btn-detalles {
+  background: #087c70;
+  color: white;
+  padding: 9px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.descripcion {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  color: #687386;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.sin-resultados {
+  padding: 20px;
+  color: #687386;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contenedor {
+    width: 94%;
+  }
+
+  .destinos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner h1 {
+    font-size: 21px;
+  }
+
+}

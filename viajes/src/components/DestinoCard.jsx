@@ -31,7 +31,7 @@ function DestinoCard({ destino, esFavorito, onFavorito, onDetalles, mostrarDetal
             className="btn-favorito"
             onClick={onFavorito}
           >
-            {esFavorito ? "♥ Quitar favorito" : "♡ Agregar favorito"}
+            {esFavorito ? " Quitar favorito" : " Agregar favorito"}
           </button>
 
           <button

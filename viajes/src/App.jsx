@@ -83,13 +83,13 @@ function App() {
 
       <main className="contenedor" id="inicio">
 
-        {/* Banner */}
+        {}
         <section className="banner">
           <h1>Descubre tu próximo destino</h1>
           <p>Explora lugares increíbles y planea tus próximas vacaciones.</p>
         </section>
 
-        {/* Contador de favoritos */}
+        {}
         <section className="contador" id="favoritos">
           <div>
             <h3>Destinos favoritos</h3>
@@ -99,7 +99,7 @@ function App() {
           <strong>{favoritos.length}</strong>
         </section>
 
-        {/* Buscador */}
+        {}
         <section className="explorar" id="destinos">
 
           <h2>Explora destinos turísticos</h2>
@@ -120,7 +120,7 @@ function App() {
 
         </section>
 
-        {/* Tarjetas */}
+        {}
         <section className="destinos-grid">
 
           {destinosFiltrados.length > 0 ? (
